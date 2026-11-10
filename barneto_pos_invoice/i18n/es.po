@@ -8,13 +8,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: model:ir.actions.client,help:barneto_pos_invoice.action_barneto_invoice_selected
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
 msgid "Barneto POS invoicing"
 msgstr "Facturación del TPV de Barneto"
-
-#: model:ir.model.fields,field_description:barneto_pos_invoice.field_pos_order__to_invoice
-msgid "Facturar"
-msgstr "Facturar"
 
 #: model:ir.ui.view,arch_db:barneto_pos_invoice.view_pos_order_tree_barneto_invoice
 msgid "Facturar seleccionados"

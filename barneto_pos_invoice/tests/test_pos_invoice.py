@@ -1,8 +1,8 @@
 import odoo
-
-from odoo.addons.point_of_sale.tests.common import TestPoSCommon
 from odoo.tests import Form
 from odoo.tools import float_compare
+
+from odoo.addons.point_of_sale.tests.common import TestPoSCommon
 
 
 @odoo.tests.tagged("post_install", "-at_install")
@@ -91,7 +91,7 @@ class TestBarnetoPosInvoice(TestPoSCommon):
             0,
         )
 
-    def test_closed_order_invoice_keeps_customer_balance_correct(self):
+    def test_pay_later_invoice_keeps_customer_balance_correct(self):
         order = self._create_order(
             [(self.cash_pm1, 40), (self.pay_later_pm, 60)],
             customer=self.customer,

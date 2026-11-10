@@ -45,7 +45,9 @@ class PosOrder(models.Model):
         for order in self:
             reason = order._barneto_invoice_skip_reason()
             if reason:
-                skipped.append(_("%(order)s: %(reason)s", order=order.name, reason=reason))
+                skipped.append(
+                    _("%(order)s: %(reason)s", order=order.name, reason=reason)
+                )
             else:
                 valid_orders |= order
 
