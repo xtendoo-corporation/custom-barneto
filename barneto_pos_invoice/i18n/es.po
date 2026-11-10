@@ -1,0 +1,45 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * barneto_pos_invoice
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Language: es\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: model:ir.actions.client,help:barneto_pos_invoice.action_barneto_invoice_selected
+msgid "Barneto POS invoicing"
+msgstr "Facturación del TPV de Barneto"
+
+#: model:ir.model.fields,field_description:barneto_pos_invoice.field_pos_order__to_invoice
+msgid "Facturar"
+msgstr "Facturar"
+
+#: model:ir.ui.view,arch_db:barneto_pos_invoice.view_pos_order_tree_barneto_invoice
+msgid "Facturar seleccionados"
+msgstr "Facturar seleccionados"
+
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
+msgid "Invoiced %(count)s order(s)."
+msgstr "Se han facturado %(count)s pedido(s)."
+
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
+msgid "Invoiced %(count)s order(s). Omitted order(s):\n%(orders)s"
+msgstr "Se han facturado %(count)s pedido(s). Pedidos omitidos:\n%(orders)s"
+
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
+msgid "The order cannot be invoiced because %(reason)s."
+msgstr "No se puede facturar el pedido porque %(reason)s."
+
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
+msgid "the order is already invoiced"
+msgstr "el pedido ya está facturado"
+
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
+msgid "the order has no customer"
+msgstr "el pedido no tiene cliente"
+
+#: code:addons/barneto_pos_invoice/models/pos_order.py:0
+msgid "the order is not in Posted state"
+msgstr "el pedido no está en estado Publicado"
