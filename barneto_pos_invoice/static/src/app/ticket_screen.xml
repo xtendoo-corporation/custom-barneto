@@ -11,7 +11,7 @@
                 t-on-click="() => this.payBarnetoInvoice(_selectedSyncedOrder)"
             >
                 <i class="fa fa-money me-1" />
-                <span>Pay invoice</span>
+                <span>Cobrar factura</span>
             </button>
         </xpath>
     </t>
