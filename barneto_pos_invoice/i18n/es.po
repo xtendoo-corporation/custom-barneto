@@ -9,33 +9,41 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "Barneto POS invoicing"
 msgstr "Facturación del TPV de Barneto"
 
 #: model:ir.ui.view,arch_db:barneto_pos_invoice.view_pos_order_tree_barneto_invoice
+#. module: barneto_pos_invoice
 msgid "Facturar seleccionados"
 msgstr "Facturar seleccionados"
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "Invoiced %(count)s order(s)."
 msgstr "Se han facturado %(count)s pedido(s)."
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "Invoiced %(count)s order(s). Omitted order(s):\n%(orders)s"
 msgstr "Se han facturado %(count)s pedido(s). Pedidos omitidos:\n%(orders)s"
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "The order cannot be invoiced because %(reason)s."
 msgstr "No se puede facturar el pedido porque %(reason)s."
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "the order is already invoiced"
 msgstr "el pedido ya está facturado"
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "the order has no customer"
 msgstr "el pedido no tiene cliente"
 
 #: code:addons/barneto_pos_invoice/models/pos_order.py:0
+#. module: barneto_pos_invoice
 msgid "the order is not in Posted state"
 msgstr "el pedido no está en estado Publicado"
