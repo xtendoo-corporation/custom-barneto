@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="templates" xml:space="preserve">
+    <t
+        t-inherit="point_of_sale.TicketScreen"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//div[contains(@class, 'control-buttons')]" position="inside">
+            <button
+                t-if="isBarnetoInvoicePayable(_selectedSyncedOrder)"
+                class="control-button btn btn-light btn-lg lh-lg flex-grow-1 flex-shrink-1"
+                t-on-click="() => this.payBarnetoInvoice(_selectedSyncedOrder)"
+            >
+                <i class="fa fa-money me-1" />
+                <span>Pay invoice</span>
+            </button>
+        </xpath>
+    </t>
+</templates>

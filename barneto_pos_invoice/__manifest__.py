@@ -21,6 +21,8 @@ duplicating the session sale.
         "point_of_sale._assets_pos": [
             "barneto_pos_invoice/static/src/app/payment_screen.js",
             "barneto_pos_invoice/static/src/app/payment_screen.xml",
+            "barneto_pos_invoice/static/src/app/ticket_screen.js",
+            "barneto_pos_invoice/static/src/app/ticket_screen.xml",
         ],
     },
     "installable": True,

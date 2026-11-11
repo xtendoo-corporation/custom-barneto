@@ -162,3 +162,45 @@ class TestBarnetoPosInvoice(TestPoSCommon):
 
         self.assertEqual(invoice.payment_state, "paid")
         self.assertTrue(invoice.currency_id.is_zero(invoice.amount_residual))
+
+    def test_invoice_payment_from_open_pos_session_is_reconciled(self):
+        order = self._create_order(
+            [(self.pay_later_pm, 100)],
+            customer=self.customer,
+            is_invoiced=False,
+        )
+        invoice = order.account_move
+        session = self.config.current_session_id
+
+        result = order.action_barneto_pay_invoice(
+            session.id,
+            self.cash_pm1.id,
+            40,
+        )
+
+        payment_order = self.env["pos.order"].browse(
+            result["payment_order_id"]
+        )
+        payment = payment_order.payment_ids
+        self.assertTrue(payment_order.barneto_invoice_payment_id)
+        self.assertEqual(payment_order.session_id, session)
+        self.assertEqual(payment.amount, 40)
+        self.assertTrue(payment.account_move_id)
+        self.assertEqual(invoice.amount_residual, 60)
+        self.assertEqual(invoice.payment_state, "partial")
+
+        closing_data = session.get_closing_control_data()
+        self.assertEqual(
+            closing_data["default_cash_details"]["payment_amount"],
+            40,
+        )
+
+        self._close_current_session()
+
+        self.assertTrue(session.move_id)
+        self.assertTrue(payment.account_move_id.line_ids.filtered(
+            lambda line: line.account_id
+            == self.env.company.account_default_pos_receivable_account_id
+            and line.reconciled
+        ))
+        self.assertEqual(invoice.amount_residual, 60)

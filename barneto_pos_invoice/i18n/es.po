@@ -47,3 +47,66 @@ msgstr "el pedido no tiene cliente"
 #. module: barneto_pos_invoice
 msgid "the order is not in Posted state"
 msgstr "el pedido no está en estado Publicado"
+
+#. module: barneto_pos_invoice
+msgid "The order has no invoice to pay."
+msgstr "El pedido no tiene ninguna factura que cobrar."
+
+#. module: barneto_pos_invoice
+msgid "The invoice must be posted before it can be paid."
+msgstr "La factura debe estar publicada antes de poder cobrarla."
+
+#. module: barneto_pos_invoice
+msgid "The invoice has no customer."
+msgstr "La factura no tiene cliente."
+
+#. module: barneto_pos_invoice
+msgid ""
+"Select an open session from the same point of sale configuration as the "
+"ticket."
+msgstr ""
+"Selecciona una sesión abierta de la misma configuración de TPV que el ticket."
+
+#. module: barneto_pos_invoice
+msgid "Select a cash or bank payment method."
+msgstr "Selecciona un método de pago de efectivo o banco."
+
+#. module: barneto_pos_invoice
+msgid "The payment amount must be greater than zero."
+msgstr "El importe del cobro debe ser mayor que cero."
+
+#. module: barneto_pos_invoice
+msgid "The payment exceeds the invoice residual."
+msgstr "El cobro supera el saldo pendiente de la factura."
+
+#. module: barneto_pos_invoice
+msgid "Payment of %s"
+msgstr "Cobro de %s"
+
+#. module: barneto_pos_invoice
+msgid "Invoice payment for %(invoice)s using %(method)s"
+msgstr "Cobro de la factura %(invoice)s mediante %(method)s"
+
+#. module: barneto_pos_invoice
+msgid "Select payment method"
+msgstr "Seleccionar método de pago"
+
+#. module: barneto_pos_invoice
+msgid "Payment amount"
+msgstr "Importe del cobro"
+
+#. module: barneto_pos_invoice
+msgid "This invoice is already paid."
+msgstr "Esta factura ya está pagada."
+
+#. module: barneto_pos_invoice
+msgid "Invoice payment registered."
+msgstr "Cobro de factura registrado."
+
+#. module: barneto_pos_invoice
+msgid "Unable to register the invoice payment."
+msgstr "No se ha podido registrar el cobro de la factura."
+
+#. module: barneto_pos_invoice
+msgid "Pay invoice"
+msgstr "Cobrar factura"
